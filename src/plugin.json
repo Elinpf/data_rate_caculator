@@ -4,8 +4,8 @@
 	"features": [
 		{
 		  "code": "rate",
-		  "explain": "速率转换工具",
-			"cmds":["速率转换"]
+		  "explain": "速率换算工具",
+			"cmds":["速率换算"]
 		}
 	]
 }

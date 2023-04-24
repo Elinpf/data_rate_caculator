@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="calc-div">
+        <form>
+            <p>
+                <strong>流量速度单位换算</strong><br>
+                bit(b)是位，Byte(B)是字节，一个字节由8位组成，也就是1Byte=8bit，Kilo是千，1KB=1024B，1kb=1024b，Mega是兆(百万)。<br>
+                通常国际标准使用bps表示各种设备的传输速率，b是位，ps是每秒，bps就是每秒多少位。平时使用的下载软件又一般使用KB/秒或者B/s等，因为文件大小的单位是字节(B)。
+            </p>
+
+            <table class="calc_table">
+                <tbody>
+                    <tr>
+                        <td width="590">
+                            <span>
+                                bit (b): <input type="number" value="0" id="data_bit"> (bps)<br>
+                                Byte (B): <input type="number" value="0" id="data_byte"> (B/S)<br>
+                                kilobit (kb): <input type="number" value="0" id="data_kilobit"> (kbps)<br>
+                                Kilobyte (KB): <input type="number" value="0" id="data_kilobyte"> (KB/S)<br>
+                                megabit (mb): <input type="number" value="0" id="data_megabit"> (mbps)<br>
+                                Megabyte (MB): <input type="number" value="0" id="data_megabyte"> (MB/S)<br>
+                            </span>
+                            <input class="button" type="reset" value="清除">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+<footer>
+    <script src="calc.js"></script>
+</footer>
+
+</html>
