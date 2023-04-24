@@ -1,0 +1,11 @@
+{
+	"main": "index.html",
+	"logo": "logo.png",
+	"features": [
+		{
+		  "code": "rate",
+		  "explain": "速率转换工具",
+			"cmds":["速率转换"]
+		}
+	]
+}
