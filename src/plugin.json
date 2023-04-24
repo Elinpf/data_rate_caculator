@@ -5,7 +5,7 @@
 		{
 		  "code": "rate",
 		  "explain": "速率换算工具",
-			"cmds":["速率换算"]
+			"cmds":["速率换算", "rate conversion"]
 		}
 	]
 }
