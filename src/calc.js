@@ -36,12 +36,26 @@ data_megabyte.addEventListener('input', function () {
     bit_to_other(bit, 'megabyte');
 });
 
+const data_gigabit = document.getElementById('data_gigabit');
+data_gigabit.addEventListener('input', function () {
+    var bit = data_gigabit.value * 1024 * 1024 * 1024;
+    bit_to_other(bit, 'gigabit');
+});
+
+const data_gigabyte = document.getElementById('data_gigabyte');
+data_gigabyte.addEventListener('input', function () {
+    var bit = data_gigabyte.value * 8 * 1024 * 1024 * 1024;
+    bit_to_other(bit, 'gigabyte');
+});
+
 function bit_to_other(bit, type) {
     var kilobit = bit / 1024;
     var megabit = kilobit / 1024;
     var byte = (kilobit / 8) * 1024;
     var kilobyte = kilobit / 8;
     var megabyte = kilobyte / 1024;
+    var gigabit = megabit / 1024;
+    var gigabyte = megabyte / 1024;
     if (type != 'bit') {
         document.getElementById('data_bit').value = bit;
     }
@@ -61,6 +75,12 @@ function bit_to_other(bit, type) {
     }
     if (type != 'megabyte') {
         document.getElementById('data_megabyte').value = megabyte;
+    }
+    if (type != 'gigabit') {
+        document.getElementById('data_gigabit').value = gigabit;
+    }
+    if (type != 'gigabyte') {
+        document.getElementById('data_gigabyte').value = gigabyte;
     }
 }
 
